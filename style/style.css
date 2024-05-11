@@ -583,6 +583,7 @@ body.dark {
   font-weight: 700;
   position: relative;
   top: -10%;
+  font-size: 2rem;
 }
 
 .item-row {
@@ -711,17 +712,29 @@ body.dark {
     width: 100%;
     margin: 20px 0;
   }
+  .item-card {
+    min-width: 150px; /* Adjusted min-width for larger mobile devices and tablets */
+  }
 
+  
   .rectangle-42 {
     height: 150px;
+    margin-left: 5px;
   }
+  .local {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 25%;
+    align-items: center;
+}
 
   .product-name {
     font-size: 18px;
   }
   .container .sec-img{
-    max-width: 1000px;
-    }
+    display: none;
+  }
 }
 
 /* Media queries for larger mobile devices and tablets */
@@ -742,7 +755,11 @@ body.dark {
  .container .sec-img{
   max-width: 1000px;
   }
+  .item-card{
   
+  min-width: 150px;
+ 
+}
 }
 
 
